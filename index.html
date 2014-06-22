@@ -1,8 +1,39 @@
 <html>
 <head>
-  <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.css" />
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
   <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
-
 </head>
-<h1>test</h1>
+<body>
+<div data-role="page">
+  <div data-role="header" class="jqm-header">
+    <h1>
+    Grocery List
+    </h1>
+  </div>
+  <div data-role="content">
+    <p>Item</p>
+    <a href="#" class="ui-btn">-</a>
+    <a href="#" class="ui-btn">+</a>
+
+    <hr />
+    <p>Item</p>
+    <div class="row">
+    <a href="#" class="ui-btn ui-icon-plus ui-btn-icon-notext ui-corner-all">No text</a> 1
+    <a href="#" class="ui-btn ui-icon-minus ui-btn-icon-notext ui-corner-all">No text</a>
+    </div>
+    <hr />
+    <p>Item</p>
+    <hr />
+  </div>
+  <footer data-role="footer">
+    <a href="#" class="ui-btn">Checkout</a>
+
+  </footer>
+</div>
+
+
+</body>
+
 </html>
