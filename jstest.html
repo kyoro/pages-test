@@ -7,6 +7,7 @@
   <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
 </head>
 
+<h1 id="message"></h1>
 <input type="button" value="Say hello" onClick="showToast('Hello Android!')" />
 
 <script type="text/javascript">
@@ -14,16 +15,12 @@
       FarmStand.showToast(message);
     }
     function makeStr(message) {
-      alert(FarmStand.makeStr(message));
-    }
-    function makeMsg(text){
-      alert(text);
+      $('#message').text(FarmStand.makeStr(message));
     }
 </script>
 
 
 <input type="button" value="STR" onClick="makeStr('Hello Android!')" />
-<input type="button" value="STG" onClick="makeMsg('Hello Android!')" />
 
 </body>
 </html>
