@@ -1,6 +1,11 @@
 <html>
 <body>
-
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.css" />
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+</head>
 
 <input type="button" value="Say hello" onClick="showToast('Hello Android!')" />
 
@@ -11,10 +16,14 @@
     function makeStr(message) {
       alert(FarmStand.makeStr(message));
     }
+    function makeMsg(text){
+      alert(msg);
+    }
 </script>
 
 
 <input type="button" value="STR" onClick="makeStr('Hello Android!')" />
+<input type="button" value="STG" onClick="makeMsg('Hello Android!')" />
 
 </body>
 </html>
